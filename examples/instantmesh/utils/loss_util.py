@@ -30,7 +30,7 @@ class LPIPS(nn.Cell):
         # create vision backbone and load pretrained weights
         self.net = vgg16(
             pretrained=pretrained_vgg_mindcv,
-            ckpt_path="./th-vgg16-397923af.ckpt",  # torch ckpt different from mindcv ckpt
+            ckpt_path="YOUR_PATH/vgg16-397923af.ckpt",  # MUST BE CKPT HERE!! mindcv does not return err even pth passed which is incorrect
             requires_grad=False,
         )
 

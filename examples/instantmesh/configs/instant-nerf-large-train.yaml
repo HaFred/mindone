@@ -13,7 +13,7 @@ model:
       params:
         encoder_feat_dim: 768
         encoder_freeze: false
-        encoder_model_name: 'YOUR_PATH_HF/models--facebook--dino-vitb16/snapshots/f205d5d8e640a89a2b8ef0369670dfc37cc07fc2'  # coz needs to enforce the is_local flag (with pretrained_model_name_or_path as dir), thus here put in the abs path as a workaround
+        encoder_model_name: 'YOUR_PATH_HF/models--facebook--dino-vitb16'  # coz needs to enforce the is_local flag (with pretrained_model_name_or_path as dir), thus here put in the abs path as a workaround
         transformer_dim: 1024
         transformer_layers: 16
         transformer_heads: 16
